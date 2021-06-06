@@ -1,0 +1,337 @@
+/* 1 clear*/
+.firstPage {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align-last: right;
+  line-height: 0.9;
+}
+
+.textBox {
+  writing-mode: vertical-rl;
+  position: relative;
+  margin-bottom: 10vh;
+  margin-left: 40vw;
+  font-size: 150px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.profileImage {
+  width: 900px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* 2 clear*/
+.secondPage {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduce {
+  font-size: 80px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+}
+
+.sample {
+  background-color: white;
+  -webkit-text-stroke: 2px black;
+
+}
+
+.sample:hover {
+  background-color: transparent;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+}
+
+.highlight {
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+}
+
+.highlight:hover {
+  background-color: white;
+  color: black;
+}
+
+.type1:hover {
+  background-color: yellowgreen;
+}
+
+.type2:hover {
+  background-color: yellow;
+}
+
+.type3:hover {
+  background-color: skyblue;
+}
+
+
+
+
+/* 3 */
+.thirdPage {
+  height: 300vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+
+}
+
+.titleSide {
+  width: 50vw;
+  height: 100%;
+  /* background-color: #ffffff; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  color: white;
+
+}
+.explainSide {
+  width: 50vw;
+  /* background-color: #000000; */
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  position: absolute;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 80px;
+  font-weight: 600;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  color: black;
+
+}
+
+.titleImg {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.explain {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.explainTitle {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+
+.desc {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 30px;
+  color: black;
+}
+
+.explainHidden {
+  display: none;
+}
+.sc {
+  width: 90%;
+  height: auto;
+}
+/* 4 clear*/
+.fourthPage {
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.contack {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.instaLink {
+  color: white;
+}
+
+.instaLink:hover {
+  color: skyblue;
+}
+
+
+
+@media screen and (min-height: 760px) {
+
+  .textBox {
+    font-size: 150px;
+  }
+
+  .title {
+    justify-content: left;
+    font-size: 100px;
+  }
+
+}
+
+@media screen and (min-height: 1090px) {
+  .profileImage {
+    width: 1090px;
+
+  }
+
+  .textBox {
+    font-size: 200px;
+  }
+}
+
+@media screen and (min-height: 1300px) {
+  .profileImage {
+    width: 1200px;
+  }
+
+  .textBox {
+    font-size: 220px;
+  }
+
+}
+
+@media screen and (max-width: 1850px) {
+
+  .textBox {
+    font-size: 200px;
+  }
+  .profileImage {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .profileImage {
+    width: 800px;
+  }
+  .textBox {
+    font-size: 150px;
+  }
+  .title {
+    justify-content: left;
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .profileImage {
+    width: 700px;
+  }
+
+  .textBox {
+    font-size: 100px;
+  }
+  .title {
+    justify-content: left;
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .profileImage {
+    width: 500px;
+  }
+
+  .textBox {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    writing-mode: horizontal-tb;
+    padding-bottom: 50px;
+  }
+  .profileImage {
+    position: static;
+  }
+
+  .introduce {
+    font-size: 60px;
+    font-weight: 600;
+
+  }
+  .explainHidden {
+    display: block;
+    padding-top: 100px;
+  }
+  .explainSide {
+    display: none;
+  }
+
+  .titleSide {
+    width: 100vh;
+
+  }
+  .title {
+    justify-content: left;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .textBox {
+    font-size: 80px;
+  }
+  .profileImage {
+    width: 300px;
+  }
+  .introduce {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .fourthPage {
+    font-size: 20px;
+  }
+  .contack {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .explainTitle {
+    font-size: 30px;
+  }
+  .desc {
+    font-size: 20px;
+  }
+  .title {
+    justify-content: left;
+    font-size: 30px;
+  }
+}
